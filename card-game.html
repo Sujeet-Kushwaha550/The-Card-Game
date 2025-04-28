@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="card-game.js" defer></script>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="card-game.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="card" class="card1" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card2" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card3" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card4" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card5" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card6" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card7" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card8" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card9" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See</div>
+            <div class="back">Back</div>
+        </div>
+        <div id="card" class="card10" onClick="clickedCard(this.getAttribute('class'));">
+            <div class="front">Click On Me To See </div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+    <div class="container2">
+        <!-- =============== Chance ================ -->
+        <div class="chances">
+           <div class="remainingChance"> You have only <span class="chance">3</span> chance. Find the same card.</div>
+        </div>
+        <div class="fa-solid fa-circle-arrow-right">
+        </div>
+        <!-- ========= Random Number ============ -->
+        <div class="bottom">
+            <p class="number"></p>
+        </div>
+    </div>
+    <!-- ================ Result =============== -->
+    <div id="result">
+        <div class="result">
+            <h1 class="winner">You are the winner &#128516;</h1>
+            <h1 class="again">Do You want to continue???</h1>
+            <div class="buttons">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

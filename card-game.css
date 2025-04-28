@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 98.5vh;
+    border-radius: 10px;
+    background: linear-gradient(135deg,rgb(226, 223, 223),rgb(95, 87, 87)
+    );
+    font-size: 1.5rem;
+    font-family: arial;
+    position:relative;
+}
+.container{
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 5px;
+    position:relative;
+    height: 60vh;
+}
+#card{
+    margin:.5rem;
+    display: inline-block;
+    transform-style: preserve-3d;
+    position:relative;
+    transition: transform .5s ease-in;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.452);
+    border-radius:5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.945);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* #card:hover{
+    transform:rotateY(180deg);
+} */
+#card .front, #card .back{
+    position:absolute;
+    height:100%;
+    width:100%;
+    text-align:center;
+    backface-visibility:hidden;
+    border-radius:5px;
+    background-size: cover;
+}
+#card .back{
+    transform: rotateY(180deg);
+    font-size: .1rem;
+}
+#card .front{
+    background-image: url("Anime/shinchan-copy.jpg");
+    line-height: 30px;
+    color: rgb(255, 43, 6);
+    word-wrap: wrap;
+    transition: all .2s ease;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.911);
+}
+#card .front:hover{    
+    filter:brightness(.8);
+}
+
+/* ======================= Container2 ================== */
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container2 .fa-circle-arrow-right{
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 5rem;
+    color:red;
+    text-shadow: -2px 2px 10px black;
+    background: wheat;
+    cursor: pointer;
+}
+/* ======================= Chances ==================== */
+.chances{
+    height: 240px;
+    width: 500px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:wheat;
+    background-color:rgb(255, 0, 0) ;
+    background: linear-gradient(45deg,rgb(52, 121, 153),rgb(3, 31, 44));
+    background: linear-gradient(45deg,rgb(255, 0, 34),rgb(116, 3, 3));
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.514);
+    font-weight: bold;
+    cursor:pointer;
+    display: inline-block;
+    word-wrap: break-word;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.chances .chance{
+    font-size:  6rem;
+    color:rgb(13, 233, 13);
+}
+/* ============== Guessed Number ============= */
+.bottom{
+    cursor: pointer;
+    height: 240px;
+    width: 500px;
+    border-radius: 10px;
+    background-size: cover;
+    background-origin: content-box;
+}
+.bottom .top, .bottom .number{
+    margin:2rem;
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.863);
+    font-weight: bold;
+}
+.bottom .number{
+    font-size: .1rem;
+}
+
+
+/* ==================== result =============== */
+#result{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.493);
+    position:absolute;
+    top:0;
+    display: none;
+}
+
+#result .result{
+    height: 450px;
+    width: 600px;
+    margin: auto;
+    background:rgba(240, 232, 232, 0.918);
+    border-radius: 15px;
+    box-shadow:3px -1px 10px 10px rgba(0, 0, 0, 0.671);
+    font-size:1.4rem;
+    color:#3a0e09;
+    background-size:cover;
+    position:absolute;
+    left:27%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: -2px 2px 2px black;
+}
+.result .winner{
+    font-size: 2.8rem;
+    text-align: center;
+    color:rgb(14, 108, 151);
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.result .again{
+    font-size: 1.8rem;
+    text-align: center;
+    color:rgb(238, 183, 34);
+}
+.result .buttons{
+    text-align: center;
+}
+.result .buttons button{
+    font-size: 1.5rem;
+    margin: 1rem;
+    height: 50px;
+    width: 70px;
+    outline: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 1px rgb(22, 22, 22);
+    transition: all .3s ease;
+}
+.buttons .yes{
+    border:none;
+    color:rgb(14, 108, 151);
+}
+.buttons .yes:hover{
+    background: rgb(10, 97, 138);
+    color: white;
+}
+.buttons .no{
+    border:none;
+    color: rgb(236, 8, 65);
+}
+.buttons .no:hover{
+    background: rgb(236, 8, 27);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
